@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--color name="colorPrimary">#051758</color-->
+    <color name="colorPrimary">#0D1D55</color>
+    <!--color name="colorOnBackground">#01014b</color-->
+    <color name="colorOnBackground">#0E1B4A</color>
+    <!--color name="colorOnBackground">#031e36</color-->
+    <!--color name="colorPrimaryVariant">#192c8c</color-->
+    <color name="colorPrimaryVariant">#263891</color>
+    <color name="colorOnPrimary">#18EAFD</color>
+    <color name="colorOnPrimaryAlpha">#1A18EAFD</color>
+    <color name="colorSecondary">#1B267A</color>
+    <color name="colorSecondaryVariant">#048BDC</color>
+    <color name="colorOnSecondary">#18EAFD</color>
+    <color name="colorOnSecondary2">#9DC7DE</color>
+
+    <color name="ic_custom_launcher_background">#2ACAB7</color>
+
+    <color name="red">#ffff0000</color>
+    <color name="mediumblue">#ff0000cd</color>
+    <color name="green">#2F522F</color>
+    <color name="textColor">#ffff</color>
+    <color name="green_login">#03dac5</color>
+
+    <color name="colorOne">#40c4ff</color>
+    <color name="colorTwo">#00e676</color>
+    <color name="colorThree">#ff5252</color>
+
+    <color name="colorThree2">#d03050</color>
+    <color name="colorGrey">#C3C3C3</color>
+
+    <!-- Цвета использующие в ComplaintsDialog -->
+    <color name="compBackground">#ffff</color>
+    <color name="compButtonsPosit">#1937BB</color>
+    <color name="compButtonsNegative">#8C8F90</color>
+    <color name="compButtonsText">#ffff</color>
+    <color name="compTitleColor">#000000</color>
+
+    <color name="no_color">#00000000</color>
+
+    <!--    <color name="neon_body">#00B8D4</color>-->
+    <!--    <color name="neon_glow">#CC00B8D4</color>-->
+
+    <!--    <color name="neon_body_two">#04d435</color>-->
+    <!--    <color name="neon_glow_two">#0DE840</color>-->
+
+    <!--    <color name="neon_body_three">#ee036c</color>-->
+    <!--    <color name="neon_glow_three">#fa4c81</color>-->
+
+    <color name="neon_body">#1982c4</color>
+    <color name="neon_glow">#CC00B8D4</color>
+
+    <color name="neon_body_two">#386641</color>
+    <color name="neon_glow_two">#0DE840</color>
+
+    <color name="neon_body_three">#a50104</color>
+    <color name="neon_glow_three">#fa4c81</color>
+
+    <!-- Градиент температуры -->
+    <color name="temp_salon_vertical_start">#0065FF</color>
+    <color name="temp_salon_vertical_center">#FF9800</color>
+    <color name="temp_salon_vertical_end">#F8060F</color>
+
+    <color name="start_one">#7EEFAE</color>
+    <color name="center_one">#2B32B2</color>
+    <color name="end_one">#2B32B2</color>
+
+    <color name="start_two">#11998e</color>
+    <color name="center_two">#126F41</color>
+    <color name="end_two">#061700</color>
+
+    <color name="start_three">#0065FF</color>
+    <color name="center_three">#C62828</color>
+    <color name="end_three">#6E0E0E</color>
+
+    <!--color name="back_color">#23345b</color-->
+    <color name="back_color">#33000000</color>
+    <color name="customColorSurface">#283f67</color>
+
+</resources>

@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorOnBackground">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        style="@style/TextViewTemplate"
+                        android:text="@string/personal_data"
+                        android:textSize="26sp" />
+
+                </RelativeLayout>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    >
+                    <androidx.constraintlayout.widget.ConstraintLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/cv_bg">
+
+                        <RelativeLayout
+                            android:id="@+id/profile"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/profile_info"
+                            app:layout_constraintHorizontal_weight="2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/profilePhoto"
+                                android:layout_width="@dimen/imageSize"
+                                android:layout_height="@dimen/imageSize"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/profile_photo" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/profile_info"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_weight="3"
+                            app:layout_constraintStart_toEndOf="@+id/profile"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/username"
+                                style="@style/TextViewTemplate"
+                                android:padding="8dp"
+                                android:text="username"
+                                android:textSize="@dimen/titleSize" />
+
+                            <TextView
+                                android:id="@+id/statistic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp"
+                                android:text="@string/rating"
+                                android:textColor="?attr/colorOnPrimary"
+                                android:textSize="@dimen/textSize" />
+
+                            <RelativeLayout
+                                android:id="@+id/stat_progress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp">
+
+                                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                                    android:id="@+id/cpb_progress"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_centerInParent="true"
+                                    app:cpb_background_progressbar_color="?attr/colorSecondaryVariant"
+                                    app:cpb_background_progressbar_width="16dp"
+                                    app:cpb_progress="10"
+                                    app:cpb_progress_direction="to_right"
+                                    app:cpb_progressbar_color="?attr/colorOnPrimary"
+                                    app:cpb_progressbar_width="16dp"
+                                    app:cpb_round_border="false"
+                                    app:cpb_start_angle="180" />
+
+                                <TextView
+                                    android:id="@+id/progPercent"
+                                    style="@style/TextViewTemplate"
+                                    android:layout_centerInParent="true"
+                                    android:text="10%"
+                                    android:textSize="@dimen/textSize" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/end_test"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/bg_light">
+
+                        <TextView
+                            style="@style/TextViewTemplate"
+                            android:layout_alignParentStart="true"
+                            android:padding="8dp"
+                            android:text="@string/finish"
+                            android:textSize="20sp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="20dp"
+                            tools:ignore="VectorDrawableCompat" />
+
+                    </RelativeLayout>
+                </TableRow>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/title_text"
+                        style="@style/TextViewTemplate"
+                        android:layout_centerVertical="true"
+                        android:text="@string/last_test_results"
+                        android:textSize="@dimen/bigTitleSize" />
+
+                </RelativeLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/block1"
+                        android:layout_width="0dp"
+                        app:layout_constraintHorizontal_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/blockTono">
+
+                        <LinearLayout
+                            android:id="@+id/dashDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/cv_bg"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="8dp">
+
+                                <TextView
+                                    style="@style/TextViewTemplate"
+                                    android:layout_marginStart="8dp"
+                                    android:text="@string/date"
+                                    android:textSize="@dimen/textSize"
+                                    android:textColor="?attr/colorOnSecondary"/>
+
+                                <TextView
+                                    android:id="@+id/tv_data"
+                                    style="@style/TextViewTemplate"
+                                    android:layout_marginStart="8dp"
+                                    android:text="_/_/_"
+                                    android:textSize="@dimen/textSize"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="8dp">
+
+                                <TextView
+                                    style="@style/TextViewTemplate"
+                                    android:layout_marginStart="8dp"
+                                    android:text="@string/time"
+                                    android:textSize="@dimen/textSize"
+                                    android:textColor="?attr/colorOnSecondary"/>
+
+                                <TextView
+                                    android:id="@+id/tv_time"
+                                    style="@style/TextViewTemplate"
+                                    android:layout_marginStart="8dp"
+                                    android:text="_:_"
+                                    android:textSize="@dimen/textSize"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/therm_lay"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:background="@drawable/cv_bg"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                style="@style/TextViewTemplate"
+                                android:layout_marginBottom="8dp"
+                                android:gravity="center"
+                                android:text="@string/termometer"
+                                android:textSize="@dimen/titleSize" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                                    android:id="@+id/therm_result"
+                                    android:layout_width="@dimen/arcProgressSize"
+                                    android:layout_height="@dimen/arcProgressSize"
+                                    android:layout_centerInParent="true"
+                                    app:cpb_background_progressbar_color="?attr/colorSecondaryVariant"
+                                    app:cpb_background_progressbar_width="20dp"
+                                    app:cpb_progress="366"
+                                    app:cpb_progress_direction="to_right"
+                                    app:cpb_progress_max="400"
+                                    app:cpb_progressbar_color="@color/colorOne"
+                                    app:cpb_progressbar_width="20dp"
+                                    app:cpb_round_border="false"
+                                    app:cpb_start_angle="180" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_centerInParent="true"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:id="@+id/thermVal"
+                                        style="@style/BoldText"
+                                        android:text="36.6"
+                                        android:textSize="@dimen/titleSize" />
+
+                                    <TextView
+                                        style="@style/TextViewTemplate"
+                                        android:text="@string/term_unit"
+                                        android:textSize="@dimen/textSize" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/blockTono"
+                        android:layout_width="0dp"
+                        app:layout_constraintHorizontal_weight="1"
+                        android:layout_height="450dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/cv_bg"
+                        android:orientation="vertical"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/block1"
+                        app:layout_constraintBaseline_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/block3">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/tonometer"
+                            android:textColor="?attr/colorOnPrimary"
+                            android:textSize="@dimen/titleSize" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Артериальное давление"
+                            android:textColor="?attr/colorOnPrimary"
+                            android:textSize="@dimen/textSize"
+                            android:layout_marginBottom="5dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                                    android:id="@+id/top_press"
+                                    android:layout_width="170dp"
+                                    android:layout_height="170dp"
+                                    android:layout_centerInParent="true"
+                                    app:cpb_background_progressbar_color="?attr/colorSecondaryVariant"
+                                    app:cpb_background_progressbar_width="20dp"
+                                    app:cpb_progress_direction="to_right"
+                                    app:cpb_progress_max="200"
+                                    app:cpb_progressbar_color="@color/colorThree"
+                                    app:cpb_progressbar_width="20dp"
+                                    app:cpb_round_border="false"
+                                    app:cpb_start_angle="180" />
+
+                                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                                    android:id="@+id/down_press"
+                                    android:layout_width="@dimen/arcProgressSize"
+                                    android:layout_height="@dimen/arcProgressSize"
+                                    android:layout_centerInParent="true"
+                                    app:cpb_background_progressbar_color="?attr/colorSecondaryVariant"
+                                    app:cpb_background_progressbar_width="20dp"
+                                    app:cpb_progress_direction="to_right"
+                                    app:cpb_progress_max="200"
+                                    app:cpb_progressbar_color="@color/colorTwo"
+                                    app:cpb_progressbar_width="20dp"
+                                    app:cpb_round_border="false"
+                                    app:cpb_start_angle="180" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_centerInParent="true"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:id="@+id/totalPressVal"
+                                        style="@style/BoldText"
+                                        android:text="120/80"
+                                        android:textSize="@dimen/titleSize" />
+
+                                    <TextView
+                                        style="@style/TextViewTemplate"
+                                        android:text="@string/press_unit"
+                                        android:textSize="@dimen/textSize" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/pulse"
+                            android:textColor="?attr/colorOnPrimary"
+                            android:textSize="@dimen/textSize"
+                            android:layout_marginBottom="5dp"  />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingBottom="8dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                                    android:id="@+id/pulse"
+                                    android:layout_width="@dimen/arcProgressSize"
+                                    android:layout_height="@dimen/arcProgressSize"
+                                    android:layout_centerInParent="true"
+                                    app:cpb_background_progressbar_color="?attr/colorSecondaryVariant"
+                                    app:cpb_background_progressbar_width="20dp"
+                                    app:cpb_progress="80"
+                                    app:cpb_progress_direction="to_right"
+                                    app:cpb_progress_max="200"
+                                    app:cpb_progressbar_color="@color/colorThree"
+                                    app:cpb_progressbar_width="20dp"
+                                    app:cpb_round_border="false"
+                                    app:cpb_start_angle="180" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_centerInParent="true"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:id="@+id/pulseVal"
+                                        style="@style/BoldText"
+                                        android:text="80"
+                                        android:textSize="@dimen/titleSize" />
+
+                                    <TextView
+                                        style="@style/TextViewTemplate"
+                                        android:text="@string/pulse_unit"
+                                        android:textSize="@dimen/textSize" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/block3"
+                        android:layout_width="0dp"
+                        app:layout_constraintHorizontal_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/blockTono"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <LinearLayout
+                            android:id="@+id/health"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/cv_bg"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingBottom="5dp">
+
+                            <TextView
+                                style="@style/TextViewTemplate"
+                                android:layout_marginBottom="8dp"
+                                android:gravity="center"
+                                android:text="@string/health"
+                                android:textSize="@dimen/titleSize" />
+
+                            <TextView
+                                android:id="@+id/complaints"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:text="@string/no_complaints"
+                                android:textColor="?attr/colorOnPrimary"
+                                android:textSize="@dimen/textSize" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/alc_lay"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:background="@drawable/cv_bg"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                style="@style/TextViewTemplate"
+                                android:layout_marginBottom="8dp"
+                                android:gravity="center"
+                                android:text="@string/alcotester"
+                                android:textSize="@dimen/titleSize" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                                    android:id="@+id/alc_result"
+                                    android:layout_width="@dimen/arcProgressSize"
+                                    android:layout_height="@dimen/arcProgressSize"
+                                    android:layout_centerInParent="true"
+                                    app:cpb_background_progressbar_color="?attr/colorSecondaryVariant"
+                                    app:cpb_background_progressbar_width="20dp"
+                                    app:cpb_progress="160"
+                                    app:cpb_progress_direction="to_right"
+                                    app:cpb_progress_max="200"
+                                    app:cpb_progressbar_color="@color/colorTwo"
+                                    app:cpb_progressbar_width="20dp"
+                                    app:cpb_round_border="false"
+                                    app:cpb_start_angle="180" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_centerInParent="true"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:id="@+id/alcVal"
+                                        style="@style/BoldText"
+                                        android:text="0.16"
+                                        android:textSize="@dimen/titleSize"  />
+
+                                    <TextView
+                                        style="@style/TextViewTemplate"
+                                        android:text="@string/alc_unit"
+                                        android:textSize="@dimen/textSize" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyCustomWidgets" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="android:windowBackground">#0a1736</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#112045</item>
+        <item name="colorPrimaryVariant">#12264c</item>
+        <item name="colorOnPrimary">#ffffff</item>
+        <item name="colorOnBackground">#0a1736</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#12264c</item>
+        <item name="colorSecondaryVariant">#23345b</item>
+        <item name="colorSurface">#2F4A78</item>
+        <item name="colorOnSecondary">#6693ad</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="android:navigationBarColor" tools:ignore="NewApi">?attr/colorPrimary</item>
+
+    </style>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseConstraintLayout">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="BaseConstraintLayout.Dark">
+        <item name="android:background">@drawable/cv_bg2</item>
+    </style>
+
+    <style name="BaseView">
+        <item name="android:background">@drawable/cv_bg</item>
+    </style>
+
+    <style name="WrapContentHeight" parent="BaseView">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextViewTemplate" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="BoldText" parent="TextViewTemplate">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextViewSupervisorTemplate" parent="TextViewTemplate">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextViewGrouped" parent="TextViewSupervisorTemplate">
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="BoxedLayoutStyle">
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxStrokeWidth">0dp</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="BoxedLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">?attr/colorOnSecondary</item>
+    </style>
+
+    <style name="TextInputEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/border</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+</resources>

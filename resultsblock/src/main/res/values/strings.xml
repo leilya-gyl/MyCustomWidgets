@@ -1,0 +1,179 @@
+<resources>
+    <string name="app_name">ResultsBlock</string>
+
+
+    <string name="sts_null" />
+    <string name="sts_connected">Подключено\n</string>
+    <string name="sts_connecting">Подключается</string>
+    <string name="sts_listen">Идёт поиск устройства</string>
+    <string name="sts_ready">Готов к тесту</string>
+
+    <string name="msg_connection_lost">Соединение утеряно.</string>
+    <string name="msg_not_found_paired_device">Пожалуйста, выполните сопряжение.</string>
+    <string name="msg_confirm_power">Убедитесь, что устройство включено.</string>
+
+    <string name="caption_result">Результат</string>
+
+    <string name="next_test">Перейти к следующему тесту</string>
+    <string name="test_button_text">Запустить тест %s</string>
+    <string name="end_tests">Завершить</string>
+
+    <string name="dimen_alco">%.2f мг/л</string>
+    <string name="dimen_temp">%.1f ⁰С</string>
+
+    <string name="one_more_button_text">Попробовать снова(осталась ещё 1 попытка)</string>
+    <string name="device_textview_text">Устройство</string>
+    <string name="welcome_textview_text">Добро пожаловать в бета-версию приложения проверки состояния водителя!</string>
+    <string name="start_work_button_text">Начать медосмотр</string>
+
+    <string name="one_more_dialog_button_text">Попробовать повторно</string>
+
+    <string name="permissions_dialog_location_title">Не предоставлено разрешение отслеживания местоположения!</string>
+    <string name="permissions_dialog_background_location_title">Не предоставлено разрешение определения местоположения в фоновом режиме!</string>
+    <string name="permissions_dialog_location_message">Приложению необходим доступ к определению местоположения устройства для сканирования Bluetooth-устройств</string>
+    <string name="permissions_dialog_background_location_message">Приложению необходим доступ к определению местоположения устройства в фоновом режиме для сканирования Bluetooth-устройств</string>
+    <string name="permissions_dialog_location_message2">"Для сканирования Bluetooth устройств необходим доступ к местоположению устройства. Пожалуйста, перейдите в Настройки приложения->Разрешения->Местоположение и выберите \"Разрешить в любом режиме\"</string>
+    <string name="permissions_dialog_background_location_message2">"Для сканирования Bluetooth устройств необходим доступ к определению местоположения в фоновом режиме. Пожалуйста, перейдите в Настройки приложения->Разрешения->Местоположение и выберите \"Разрешить в любом режиме\"</string>
+    <string name="bluetooth_dialog_message">Приложению требуется включить Bluetooth на устройстве.</string>
+
+    <string name="alert_dialog_tag">AlertDialog</string>
+
+    <string name="bluetooth_system_service_error">На данном устройстве отсутствует Bluetooth-модуль! Приложение не будет функционировать!</string>
+    <string name="bluetooth_le_system_service_error">Данное устройство не поддерживает возможность подключения Bluetooth LE! Приложение не будет функционировать!</string>
+
+    <string name="accept_thread_name">AcceptThread</string>
+    <string name="connect_thread_name">ConnectThread</string>
+    <string name="connected_thread_name">ConnectedThread</string>
+
+
+    <!--Строковые ресурсы для регистрации и авторизации-->
+    <string name="prompt_name">Имя пользователя</string>
+    <string name="prompt_password">Пароль</string>
+    <string name="prompt_repeat_password">Повторите пароль</string>
+    <string name="but_register">Создать</string>
+    <string name="title_reg">РЕГИСТРАЦИЯ</string>
+    <string name="title_login">ВХОД</string>
+    <string name="but_sing_in">Войти</string>
+    <string name="changePassword">Сохранить</string>
+    <string name="recoverPassword">Отправить пароль на электронную почту</string>
+    <string name="changePasswordTextView">ОБНОВИТЬ ПАРОЛЬ</string>
+    <string name="recoverPasswordTextView">ВОССТАНОВИТЬ ПАРОЛЬ</string>
+    <string name="but_forgotPassword">Забыли пароль?</string>
+    <string name="but_Registration">Регистрация</string>
+    <string name="helloUsers">Добро пожаловать!</string>
+    <string name="exit">Выйти</string>
+    <!-- ********************************************* -->
+
+    <!-- Используются в классе CheckInFragment -->
+    <string name="check_in_success">Успешная регистрация.</string>
+    <string name="check_in_error">Ошибка регистрации.</string>
+    <string name="check_in_user_alredy_exist">Пользователь с таким именем уже существует.</string>
+    <string name="check_in_invalid_passwords">Пароли не совпадают, повторите попытку.</string>
+    <string name="check_in_incorrect_password">Правила создания пароля:\n
+                1) длина должна быть 8-30 символов\n
+                2) можно использовать любые символы.</string>
+
+    <!-- Используются в классе SignInFragment -->
+    <string name="sign_in_success">Успешная авторизация.</string>
+    <string name="sign_in_error">Неправильный пароль!</string>
+    <string name="sign_in_user_do_not_exist">Пользователь с таким именем не зарегистрирован в системе.</string>
+    <string name="sign_in_incorrect_login">Правила создания имени пользователя:\n
+                1) длина должна быть 8-30 символов\n
+                2) имя должно начинаться с буквы латинского алфавита, \n
+                3) в позициях со второй по 30-ю можно использовать латинские буквы и цифры.</string>
+    <string name="update_success">Пароль отправлен на привязанную электронную почту.</string>
+    <string name="update_error">Ошибка обновления данных.</string>
+    <string name="update_same_passwords">Пароли совпадают, повторите попытку.</string>
+    <string name="empty_field">Заполните обязательные поля.</string>
+    <string name="empty_field_login">Введите имя пользователя.</string>
+    <string name="empty_field_password">Введите пароль.</string>
+
+    <string name="no">Нет</string>
+    <string name="yes">Да</string>
+    <string name="cancel">Отмена</string>
+    <string name="turn_on">Включить</string>
+    <string name="first_question_text">Выспались ли вы?</string>
+    <string name="second_question_text">У вас есть жалобы на своё самочувствие?</string>
+
+    <string name="alco_instruction">
+        Порядок действий:\n
+         1) Нажмите и отпустите кнопку запуска   на АЛКОТЕСТЕРЕ и дождитесь звукового сигнала;\n
+         2) Наберите воздух в легкие и подуйте в АЛКОТЕСТЕР в место бесконтактного продува;\n
+         3) Дождитесь результата.
+    </string>
+
+    <string name="status_connect_alc">Наберите воздух в легкие и подуйте в АЛКОТЕСТЕР в место бесконтактного продува!</string>
+    <string name="status_connecting_alc">Нажмите и отпустите кнопку запуска на АЛКОТЕСТЕРЕ и дождитесь звукового сигнала!</string>
+
+    <string name="temp_instruction">
+        Порядок действий:\n
+         1) Нажмите и отпустите кнопку запуска   на электронном ТЕРМОМЕТРЕ(на экране появятся три тире);\n
+         2) Поднесите ТЕРМОМЕТР ко лбу на расстоянии 3–5 см;\n
+         3) Нажмите кнопку \"START\" НА ТЕРМОМЕТРЕ для сканирования;\n
+         4) Дождитесь результата.
+    </string>
+
+    <string name="pres_instruction">
+        Порядок действий:\n
+         1) Освободите верхнюю часть руки от верхней плотной одежды;\n
+         2) Разместите манжету выше локтевого сгиба на расстоянии 1-2 см; \n
+         3) Нажмите на ТОНОМЕТРЕ кнопку запуска   ;\n
+         4) Дождитесь результата.
+    </string>
+
+    <!--Strings for dashboard-->
+    <string name="personal_data">Личные данные</string>
+    <string name="last_test_results">Результаты последнего медосмотра: </string>
+    <string name="recommendation">Рекомендации медработника</string>
+    <string name="supervisor_answer">Ответ руководителя</string>
+    <string name="rating">Статистика пройденных медосмотров: </string>
+    <string name="date">Дата: </string>
+    <string name="time">Время: </string>
+    <string name="alcotester">Алкотестер</string>
+    <string name="termometer">Термометр</string>
+    <string name="tonometer">Тонометр</string>
+    <string name="top_press">Систолическое АД</string>
+    <string name="down_press">Диастолическое АД</string>
+    <string name="pulse">Пульс</string>
+    <string name="health">Cамочувствие</string>
+
+    <string name="stat_comm"> (из 5)</string>
+    <string name="alc_unit"> мг/л</string>
+    <string name="term_unit"> ⁰С</string>
+    <string name="press_unit"> мм рт. ст.</string>
+    <string name="pulse_unit"> удар/мин</string>
+    <string name="no_complaints">Нет жалоб</string>
+    <string name="max_t">40</string>
+    <string name="default_term"> 36,6⁰С</string>
+    <string name="max_alc">2</string>
+
+    <string name="finish">Завершить медосмотр</string>
+    <string name="error">error</string>
+
+    <!-- Используются в классе MainFragmentDialog -->
+    <string name="title_warning">Внимание!</string>
+    <string name="message_warning">Время на выполнение тестирования</string>
+    <string name="message_minutes">минут.</string>
+    <string name="button_positive_exit">Да</string>
+    <string name="button_negative_warning">Отмена</string>
+    <string name="title_exit">Выход из учетной записи!</string>
+    <string name="message_exit">Вы действительно хотите выйти?</string>
+    <string name="button_positive_warning">Ок</string>
+    <string name="message_exit_test">Вы действительно хотите прервать медосмотр?</string>
+    <string name="title_complaints">Напишите свои жалобы!</string>
+    <string name="tint_problems">Что вас беспокоит?</string>
+    <string name="set_complaints">Отправить</string>
+    <string name="cancel_complaints">Закрыть</string>
+    <string name="bluetooth_warning">Предупреждение!</string>
+    <string name="error_connect_device">Не удалось подключиться к устройству!</string>
+    <string name="loss_signal_device">Сигнал от устройства потерян!</string>
+    <string name="image_instruction_content_description">Показывает графическое приложение к инструкции</string>
+    <string name="go_settings">Перейти в настройки</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="max_tnm">200</string>
+
+    <string name="alc_device">Уровень алкоголя в крови</string>
+    <string name="temp_device">Температура тела\n</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="GlowVerticalProgress">
+        <attr name="testType">
+            <enum name="thermometer" value="0"/>
+            <enum name="alc_tester" value="1"/>
+        </attr>
+        <attr name="testValue" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularLayout">
+        <attr name="valueType">
+            <enum name="pulse" value="0"/>
+            <enum name="top_pressure" value="1"/>
+            <enum name="low_pressure" value="2"/>
+        </attr>
+        <attr name="valueFloat" format="float" />
+    </declare-styleable>
+
+</resources>

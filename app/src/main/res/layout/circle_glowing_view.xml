@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="data"
+            type="com.example.mycustomwidgets.customViews.CustomValues" />
+        <variable
+            name="color"
+            type="com.example.mycustomwidgets.customViews.CustomColors" />
+    </data>
+    <RelativeLayout
+        android:id="@+id/relLay"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        >
+
+        <com.example.mycustomwidgets.customViews.CircularGlowingProgressView
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:customColors="@{color}"
+            app:customProgress="@{data.value}" />
+
+        <TextView
+            android:id="@+id/current_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@{data.value}"
+            android:textStyle="bold|italic"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/min_value"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:id="@+id/unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/current_value"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/current_value"
+            android:text="@{data.unit}"
+            android:textSize="14sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{data.type}"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/min_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{data.min}"
+            android:textStyle="bold|italic"
+            android:layout_marginStart="50dp"
+            android:layout_above="@+id/type"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:id="@+id/max_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{data.max}"
+            android:textStyle="bold|italic"
+            android:layout_marginEnd="50dp"
+            android:layout_above="@+id/type"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+</layout>
